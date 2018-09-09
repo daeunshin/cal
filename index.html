@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<input type="text" placeholder="당신의 키를 입력하세요" size="30" id="myHeight">cm
+	<button id="but">표준체중계산</button>
+	<div id="output" style="width: 400px; height: 400px; background: yellow; color: red; text-align: center; line-height: 400px;"> 당신의 표준체중은? </div>
+
+	<script type="text/javascript">
+			
+		but.onclick = function(){
+
+			var standarWeight = (myHeight.value - 100) * 0.9;
+			var finalOutput = "당신의 키는 " + myHeight.value + "cm 이고 표준체중은 " + standarWeight + "kg 입니다.";
+
+			output.innerHTML = finalOutput;
+		}
+
+
+		
+		
+	</script>
+</body>
+</html>
