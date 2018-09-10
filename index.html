@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<input type="text" placeholder="당신이 걸은 계단 칸수를 입력하세요" size="40" id="myHeight">cm
+	<button id="but">칼로리 계산</button>
+	<div id="output" style="width: 400px; height: 400px; background: pink; color: red; text-align: center; line-height: 400px;"> 당신이 오늘 걸은 계단은? </div>
+
+	<script type="text/javascript">
+			
+		but.onclick = function(){
+
+			var standarWeight = (myHeight.value - 0) * 0.9;
+			var finalOutput = "당신이 걸은 계단은 " + myHeight.value + "칸 이고 소모한 칼로리는 " + standarWeight + "kcal 입니다.";
+
+			output.innerHTML = finalOutput;
+		}
+
+
+		
+		
+	</script>
+</body>
+</html>
